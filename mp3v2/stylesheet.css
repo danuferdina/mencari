@@ -1,0 +1,130 @@
+.main{
+    float:center;
+    margin:auto;
+    padding:20px;
+    border-radius: 0px;
+}
+/*
+Fixes header jumbotron styling
+*/
+.header{
+    background-color: #0C5C98;
+    color: white;
+    border-radius:0px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.header span{
+    font-size:40px;
+}
+@media only screen and (max-width: 550px) {
+    .header span{
+        font-size:30px;
+    }
+}
+/*
+Wrapping grid
+*/
+article{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap:5px;
+}
+
+.card{
+    box-shadow:2px 2px 5px #CCC;
+    padding: 20px;
+    border-radius: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.barheader{
+    margin: auto; float: center; width: 100%;background-color:#ECECEC;
+}
+
+/* Forces images to fit on the page */
+.responsiveimg{
+    width: 100%;
+    max-width:700px;
+}
+
+.shadow{
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.25);
+    border: 1px solid solid rgba(0, 0, 0, 0.125);
+}
+
+/* for navigation toobar */
+.headerlink{
+    color:white;
+    font-size:12px;
+    margin-top:5px;
+}
+@media only screen and (max-width:420px){
+    .header-nonessential{
+        display:none;
+    }
+}
+
+figcaption{
+    color: gray;
+}
+
+.longWideAd{
+    width: 100%;
+    max-width: 800px;
+    height: 150px;
+    display: none;
+    margin:auto;
+}
+
+.tallThinAd{
+    width: 100%;
+    height: 500px;
+    display:block;
+}
+
+.paddingGrid{
+    display:grid;
+    grid-template-columns: 250px 1fr 250px;
+}
+
+paddingGridElt{
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    paddingGridElt{
+        display:none
+    }
+    .paddingGrid{
+        display:unset;
+    }
+    .longWideAd{
+        display:block
+    }
+}
+
+
+
+/*
+Dark mode
+*/
+@media (prefers-color-scheme: dark) {
+    .header{
+        background-color: rgb(8, 56, 92);
+        color: #E0E0E0
+    }
+    body{
+        background-color: #323232;
+    }
+    .card{
+        background-color: #444;
+        box-shadow:2px 2px 5px #222;
+    }
+    .header, body, .card{
+        color: #E0E0E0
+    }
+    .barheader{
+        background-color:#464a4c
+    }
+}
