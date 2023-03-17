@@ -103,7 +103,7 @@
   }
 
 </style>
-
+<?php echo $data['items'][0]['snippet']['title']; ?>
 <div class="main">
   <div id="name">Now Playing: </div>
   <div class="player">
@@ -152,7 +152,6 @@
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <div id="ytplayer"></div>
