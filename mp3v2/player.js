@@ -172,7 +172,7 @@ let player;
     }
 
     //load instant data
-    set(id,id,"Loading...",playlist);
+    set(id,id,title,thumbnails,"Loading...",playlist);
     
     //load intelligent data when it is available
     let stat = await getVideoStats(id,function(stat){
